@@ -1,0 +1,78 @@
+// ===============================
+// MOBILE MENU TOGGLE
+// ===============================
+const mobileMenu = document.getElementById("mobileMenu");
+const hamburger = document.getElementById("hamburger");
+const closeMenu = document.getElementById("closeMenu");
+
+hamburger.addEventListener("click", () => {
+    mobileMenu.classList.add("active");
+});
+
+closeMenu.addEventListener("click", () => {
+    mobileMenu.classList.remove("active");
+});
+
+// Close menu when clicking a link
+document.querySelectorAll("#mobileMenu a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("active");
+    });
+});
+
+// ===============================
+// STICKY HEADER + SCROLL SHADOW
+// ===============================
+const header = document.querySelector("header");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 40) {
+        header.classList.add("scrolled");
+    } else {
+        header.classList.remove("scrolled");
+    }
+});
+
+// ===============================
+// PRELOADER
+// ===============================
+window.addEventListener("load", () => {
+    const preloader = document.querySelector(".preloader");
+    if (preloader) {
+        preloader.classList.add("hide");
+        setTimeout(() => preloader.remove(), 500);
+    }
+});
+
+// ===============================
+// SCROLL ANIMATIONS
+// ===============================
+const observer = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    { threshold: 0.2 }
+);
+
+document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+// ===============================
+// BACK TO TOP BUTTON
+// ===============================
+const backToTop = document.getElementById("backToTop");
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 500) {
+        backToTop.classList.add("visible");
+    } else {
+        backToTop.classList.remove("visible");
+    }
+});
+
+backToTop.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+});
