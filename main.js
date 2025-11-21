@@ -1,28 +1,4 @@
 // ===============================
-// MOBILE MENU TOGGLE
-// ===============================
-const mobileMenu = document.getElementById("mobileMenu");
-const hamburger = document.getElementById("hamburger");
-const closeMenu = document.getElementById("closeMenu");
-
-if (hamburger && mobileMenu && closeMenu) {
-    hamburger.addEventListener("click", () => {
-        mobileMenu.classList.add("active");
-    });
-
-    closeMenu.addEventListener("click", () => {
-        mobileMenu.classList.remove("active");
-    });
-
-    // Close menu when clicking a link
-    document.querySelectorAll("#mobileMenu a").forEach(link => {
-        link.addEventListener("click", () => {
-            mobileMenu.classList.remove("active");
-        });
-    });
-}
-
-// ===============================
 // STICKY HEADER + SCROLL SHADOW
 // ===============================
 const header = document.querySelector("header");
@@ -32,17 +8,6 @@ window.addEventListener("scroll", () => {
         header.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
-    }
-});
-
-// ===============================
-// PRELOADER
-// ===============================
-window.addEventListener("load", () => {
-    const preloader = document.querySelector(".preloader");
-    if (preloader) {
-        preloader.classList.add("hide");
-        setTimeout(() => preloader.remove(), 500);
     }
 });
 
@@ -68,9 +33,9 @@ document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
 const backToTop = document.getElementById("backToTop");
 
 window.addEventListener("scroll", () => {
-    if (window.scrollY > 500) {
+    if (backToTop && window.scrollY > 500) {
         backToTop.classList.add("visible");
-    } else {
+    } else if (backToTop) {
         backToTop.classList.remove("visible");
     }
 });
@@ -81,38 +46,10 @@ if (backToTop) {
     });
 }
 
-// ======================================
-// NEW WORKING MOBILE NAV (YOUR HEADER NAV)
-// ======================================
+// ===============================
+// SIMPLE WORKING MOBILE NAV
+// ===============================
 function toggleMenu() {
     const nav = document.querySelector(".nav");
     nav.classList.toggle("nav-open");
 }
-// ===============================
-// FINAL FIX: SAFETY + EVENT CHECK
-// ===============================
-
-document.addEventListener("DOMContentLoaded", () => {
-
-    const mobileMenu = document.getElementById("mobileMenu");
-    const hamburger = document.getElementById("hamburger");
-    const closeMenu = document.getElementById("closeMenu");
-
-    if (hamburger) {
-        hamburger.addEventListener("click", () => {
-            mobileMenu.classList.add("active");
-            console.log("Hamburger clicked");
-        });
-    } else {
-        console.warn("Hamburger button NOT FOUND!");
-    }
-
-    if (closeMenu) {
-        closeMenu.addEventListener("click", () => {
-            mobileMenu.classList.remove("active");
-        });
-    } else {
-        console.warn("Close menu button NOT FOUND!");
-    }
-
-});
