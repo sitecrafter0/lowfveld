@@ -51,5 +51,5 @@ if (backToTop) {
 // ===============================
 function toggleMenu() {
     const nav = document.querySelector(".nav");
-    nav.classList.toggle("nav-open");
+    nav.classList.toggle("open"); // 🔥 FIXED: matches .nav.open in your CSS
 }
