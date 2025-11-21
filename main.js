@@ -5,20 +5,22 @@ const mobileMenu = document.getElementById("mobileMenu");
 const hamburger = document.getElementById("hamburger");
 const closeMenu = document.getElementById("closeMenu");
 
-hamburger.addEventListener("click", () => {
-    mobileMenu.classList.add("active");
-});
+if (hamburger && mobileMenu && closeMenu) {
+    hamburger.addEventListener("click", () => {
+        mobileMenu.classList.add("active");
+    });
 
-closeMenu.addEventListener("click", () => {
-    mobileMenu.classList.remove("active");
-});
-
-// Close menu when clicking a link
-document.querySelectorAll("#mobileMenu a").forEach(link => {
-    link.addEventListener("click", () => {
+    closeMenu.addEventListener("click", () => {
         mobileMenu.classList.remove("active");
     });
-});
+
+    // Close menu when clicking a link
+    document.querySelectorAll("#mobileMenu a").forEach(link => {
+        link.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+        });
+    });
+}
 
 // ===============================
 // STICKY HEADER + SCROLL SHADOW
@@ -73,11 +75,11 @@ window.addEventListener("scroll", () => {
     }
 });
 
-backToTop.addEventListener("click", () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-});
-
-
+if (backToTop) {
+    backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+    });
+}
 
 // ======================================
 // NEW WORKING MOBILE NAV (YOUR HEADER NAV)

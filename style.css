@@ -585,3 +585,10 @@ form textarea:focus {
         text-align: center;
     }
 }
+
+/* =========================================================
+   ⭐ FINAL FIX — MATCH JAVASCRIPT toggleMenu() CLASS
+========================================================= */
+.nav.nav-open {
+    right: 0 !important;
+}
