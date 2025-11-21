@@ -592,3 +592,54 @@ form textarea:focus {
 .nav.nav-open {
     right: 0 !important;
 }
+/* Mobile menu */
+.mobile-nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: #fff;
+    box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: 0.3s ease-in-out;
+    z-index: 9999;
+}
+
+.mobile-nav.active {
+    right: 0;
+}
+
+/* Close button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    cursor: pointer;
+}
+
+/* Hide desktop nav on mobile */
+@media (max-width: 768px) {
+    .desktop-nav {
+        display: none;
+    }
+    .menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+        cursor: pointer;
+    }
+    .menu-toggle span {
+        width: 28px;
+        height: 3px;
+        background: #000;
+        display: block;
+        border-radius: 3px;
+    }
+}
