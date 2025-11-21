@@ -76,3 +76,13 @@ window.addEventListener("scroll", () => {
 backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
 });
+
+
+
+// ======================================
+// NEW WORKING MOBILE NAV (YOUR HEADER NAV)
+// ======================================
+function toggleMenu() {
+    const nav = document.querySelector(".nav");
+    nav.classList.toggle("nav-open");
+}
