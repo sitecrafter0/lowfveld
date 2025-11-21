@@ -88,3 +88,31 @@ function toggleMenu() {
     const nav = document.querySelector(".nav");
     nav.classList.toggle("nav-open");
 }
+// ===============================
+// FINAL FIX: SAFETY + EVENT CHECK
+// ===============================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const mobileMenu = document.getElementById("mobileMenu");
+    const hamburger = document.getElementById("hamburger");
+    const closeMenu = document.getElementById("closeMenu");
+
+    if (hamburger) {
+        hamburger.addEventListener("click", () => {
+            mobileMenu.classList.add("active");
+            console.log("Hamburger clicked");
+        });
+    } else {
+        console.warn("Hamburger button NOT FOUND!");
+    }
+
+    if (closeMenu) {
+        closeMenu.addEventListener("click", () => {
+            mobileMenu.classList.remove("active");
+        });
+    } else {
+        console.warn("Close menu button NOT FOUND!");
+    }
+
+});
