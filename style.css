@@ -485,3 +485,35 @@ a:focus, button:focus, .menu-toggle:focus{ outline:3px solid rgba(29,114,255,.18
 --------------------------*/
 /* (fixed any missing parentheses or typos from original) */
 
+/* Fix mobile overflow for the entire contact page */
+@media (max-width: 768px) {
+
+    /* Force single column on mobile */
+    .contact-wrapper {
+        grid-template-columns: 1fr !important;
+        gap: 25px !important;
+    }
+
+    /* Make sure left + right sides do NOT overflow */
+    .contact-left,
+    .contact-right {
+        width: 100% !important;
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+    }
+
+    /* Make form elements fit the screen */
+    .contact-right form,
+    .contact-right input,
+    .contact-right textarea,
+    .contact-right button {
+        width: 100% !important;
+        max-width: 100% !important;
+        box-sizing: border-box !important;
+    }
+
+    /* Prevent accidental sideways scroll */
+    body, html {
+        overflow-x: hidden !important;
+    }
+}
