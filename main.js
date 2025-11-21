@@ -47,9 +47,20 @@ if (backToTop) {
 }
 
 // ===============================
-// SIMPLE WORKING MOBILE NAV
+// MOBILE NAVIGATION (FULLY FIXED)
 // ===============================
-function toggleMenu() {
-    const nav = document.querySelector(".nav");
-    nav.classList.toggle("open"); // 🔥 FIXED: matches .nav.open in your CSS
-}
+const nav = document.getElementById("mainNav");
+const navToggle = document.getElementById("navToggle");
+
+navToggle.addEventListener("click", () => {
+    nav.classList.toggle("nav-open");
+    navToggle.classList.toggle("open"); // animates hamburger → X
+});
+
+// Close menu when clicking a link (mobile UX)
+document.querySelectorAll(".main-nav a").forEach((link) => {
+    link.addEventListener("click", () => {
+        nav.classList.remove("nav-open");
+        navToggle.classList.remove("open");
+    });
+});
