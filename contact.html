@@ -10,28 +10,40 @@
 <body>
 
     <!-- HEADER -->
-    <header class="header">
-        <div class="container nav-container">
+  <header class="header">
+    <div class="container nav-container">
 
-            <div class="logo">
-                LOWVELD
-                <span>ROOFS & GUTTERS</span>
-            </div>
-
-            <nav class="nav">
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html" class="active">Contact</a>
-            
-            </nav>
-
-            <div class="menu-toggle" onclick="toggleMenu()">
-                <span></span><span></span><span></span>
-            </div>
-
+        <div class="logo">
+            LOWVELD
+            <span>ROOFS & GUTTERS</span>
         </div>
-    </header>
+
+        <!-- Desktop Nav -->
+        <nav class="nav desktop-nav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <!-- Hamburger Button -->
+        <div id="hamburger" class="menu-toggle">
+            <span></span><span></span><span></span>
+        </div>
+
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobileMenu" class="mobile-nav">
+        <button id="closeMenu" class="close-btn">×</button>
+        
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</header>
+
 
 
     <!-- PAGE HEADER -->
