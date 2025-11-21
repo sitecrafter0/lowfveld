@@ -329,6 +329,35 @@ img,video{width:100%;display:block;max-width:100%}
   text-decoration:none; font-weight:600; transition:transform .22s ease; color:var(--dark-700);
   display:inline-block; border:2px solid #d4e4ff;
 }
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 40px 5%;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-left h2,
+    .contact-right h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-buttons-simple {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .simple-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}
+
 .simple-btn:hover{ background:#d8e8ff; transform:translateY(-3px) }
 .call-btn{ background:#e8f5ff; border-color:#cce8ff }
 .whatsapp-btn{ background:#e0ffe7; border-color:#b2f2c2; color:#1f9d48 }
