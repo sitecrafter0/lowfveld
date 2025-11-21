@@ -363,6 +363,11 @@ img, video {
         right: 0;
     }
 
+    /* ⭐ ADDED FIX – WORKS WITH YOUR JAVASCRIPT */
+    .nav.active {
+        right: 0;
+    }
+
     .menu-toggle {
         display: flex;
     }
@@ -383,10 +388,8 @@ img, video {
 
 /* --------------------------------------------------
    FIX PACK – MAKES ABOUT, PORTFOLIO & CONTACT LOOK PERFECT
-   (Added on top of your existing styles, nothing removed)
 -------------------------------------------------- */
 
-/* Page Headers (Contact, About, Portfolio) */
 .page-header {
     width: 100%;
     padding: 120px 5% 70px;
@@ -407,7 +410,7 @@ img, video {
     margin-top: 8px;
 }
 
-/* Contact Page Layout Fix */
+/* Contact Page */
 .contact-section {
     padding: 90px 5%;
 }
@@ -464,7 +467,7 @@ img, video {
     background: #c7ffd7;
 }
 
-/* Contact Form Improvements */
+/* Form */
 form .form-group {
     margin-bottom: 18px;
 }
@@ -509,10 +512,10 @@ form textarea:focus {
 
 .submit-btn:hover {
     background: #0f56c5;
-    transform: translateY(-2px);
+    transform: translateY(-2px;
 }
 
-/* ABOUT PAGE BLOCK FIXES */
+/* ABOUT PAGE */
 .section .service-card ul {
     list-style: none;
     padding-left: 0;
@@ -523,7 +526,6 @@ form textarea:focus {
     font-size: 1rem;
 }
 
-/* Expertise grid */
 .expertise-grid .service-card {
     text-align: center;
     padding: 20px;
@@ -531,7 +533,7 @@ form textarea:focus {
     font-weight: 600;
 }
 
-/* Portfolio Page (If using cards or grid) */
+/* PORTFOLIO */
 .portfolio-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -563,7 +565,7 @@ form textarea:focus {
     color: #0a2342;
 }
 
-/* Responsive Fixes for Smaller Pages */
+/* Responsive Fixes */
 @media (max-width: 850px) {
 
     .page-header {
