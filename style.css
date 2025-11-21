@@ -317,7 +317,7 @@ img,video{width:100%;display:block;max-width:100%}
 .contact-section{ padding:90px 5% }
 .contact-wrapper{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
   gap:45px;
 }
 .contact-left h2, .contact-right h2{
@@ -618,4 +618,8 @@ a:focus, button:focus, .menu-toggle:focus{ outline:3px solid rgba(29,114,255,.18
     .nav-toggle.open span:nth-child(3) {
         transform: translateY(-9px) rotate(-45deg);
     }
+}
+* {
+  max-width: 100%;
+  overflow-x: hidden;
 }
