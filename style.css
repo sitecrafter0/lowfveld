@@ -652,3 +652,31 @@ a:focus, button:focus, .menu-toggle:focus{ outline:3px solid rgba(29,114,255,.18
   max-width: 100%;
   overflow-x: hidden;
 }
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 40px 5%;
+    }
+
+    .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-left h2,
+    .contact-right h2 {
+        font-size: 1.6rem;
+    }
+
+    .contact-buttons-simple {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .simple-btn {
+        width: 100%;
+        text-align: center;
+        padding: 14px 20px;
+        font-size: 1rem;
+    }
+}
