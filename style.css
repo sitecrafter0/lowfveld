@@ -317,7 +317,7 @@ img,video{width:100%;display:block;max-width:100%}
 .contact-section{ padding:90px 5% }
 .contact-wrapper{
   display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
   gap:45px;
 }
 .contact-left h2, .contact-right h2{
@@ -328,7 +328,6 @@ img,video{width:100%;display:block;max-width:100%}
   padding:12px 20px; border-radius:10px; background:#eaf2ff;
   text-decoration:none; font-weight:600; transition:transform .22s ease; color:var(--dark-700);
   display:inline-block; border:2px solid #d4e4ff;
-  
 }
 .simple-btn:hover{ background:#d8e8ff; transform:translateY(-3px) }
 .call-btn{ background:#e8f5ff; border-color:#cce8ff }
@@ -620,4 +619,3 @@ a:focus, button:focus, .menu-toggle:focus{ outline:3px solid rgba(29,114,255,.18
         transform: translateY(-9px) rotate(-45deg);
     }
 }
-
