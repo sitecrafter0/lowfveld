@@ -517,3 +517,6 @@ a:focus, button:focus, .menu-toggle:focus{ outline:3px solid rgba(29,114,255,.18
         overflow-x: hidden !important;
     }
 }
+html, body {
+    overflow-x: hidden !important;
+}
