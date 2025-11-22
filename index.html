@@ -8,22 +8,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Responsive Header -->
-<header class="header">
+  <header class="header">
     <div class="header-container">
+
+        <!-- Logo -->
         <div class="logo">
             <img src="logo.jpg" alt="Lowveld Roofs and Gutters">
         </div>
 
-        <!-- Hamburger Icon -->
-        <div class="menu-toggle" id="menuToggle">
+        <!-- Hamburger (Mobile Only) -->
+        <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- Navigation -->
-        <nav class="nav" id="navMenu">
+        <!-- Navigation Menu -->
+        <nav class="nav-menu" id="nav-menu">
             <ul>
                 <li><a href="index.html" onclick="closeMenu()">Home</a></li>
                 <li><a href="about.html" onclick="closeMenu()">About</a></li>
@@ -31,6 +32,7 @@
                 <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
             </ul>
         </nav>
+
     </div>
 </header>
 
@@ -132,5 +134,18 @@
     </footer>
 
     <script src="main.js"></script>
+	<script>
+const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
+hamburger.addEventListener("click", () => {
+    navMenu.classList.toggle("open");
+});
+
+function closeMenu() {
+    navMenu.classList.remove("open");
+}
+</script>
+
 </body>
 </html>
