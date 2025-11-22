@@ -72,6 +72,14 @@ img { display:block; max-width:100%; height:auto; }
   z-index:1200;
   box-shadow: 0 4px 14px rgba(0,0,0,0.06);
 }
+/* Ensure header itself is a flex row even without .container */
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* pushes hamburger to the right */
+    padding: 14px 20px;
+}
+
 
 /* inner layout */
 .header .container {
