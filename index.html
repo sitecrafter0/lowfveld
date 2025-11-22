@@ -1,153 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta name="description" content="Premium roofing, gutters, and ceilings across the Lowveld. Quality workmanship, fast service, and reliable installation services.">
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lowveld Roofs & Gutters | Roofing, Gutters & Ceilings Experts</title>
-
-    <link rel="stylesheet" href="style.css" />
-    <script defer src="main.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lowveld Roofs and Gutters - Roofing and Gutter Services in the Lowveld">
+    <title>Lowveld Roofs and Gutters</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-
-    <!-- HEADER -->
-    <header class="header">
-        <div class="container nav-container">
-
-            <div class="logo">
-                LOWVELD
-                <span>ROOFS & GUTTERS</span>
-            </div>
-
-            <nav class="nav main-nav" id="mainNav">
-
-                <a href="index.html">Home</a>
-                <a href="about.html">About</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-               
-            </nav>
-
-          <div class="menu-toggle" id="navToggle">
-    <span></span><span></span><span></span>
-</div>
-
-
+    <!-- Header with navigation -->
+    <header>
+        <div class="logo">
+            <img src="logo.jpg" alt="Lowveld Roofs and Gutters">
         </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </header>
 
-
-    <!-- HERO SECTION -->
+    <!-- Hero Section -->
     <section class="hero">
-	
-<!-- Background video -->
-<video class="hero-video" autoplay muted loop playsinline>
-    <source src="14465086_1080_1920_25fps.mp4" type="video/mp4" />
-</video>
-
-
-        <div class="hero-overlay"></div>
-
-        <div class="hero-content">
-            <h1>
-                Premium Roofing, Gutters & Ceilings  
-                <span class="accent">Across the Lowveld</span>
-            </h1>
-
-            <p>Quality workmanship. Fast service. Guaranteed durability.</p>
-
-           
-               
-            </div>
+        <div class="hero-video-container">
+            <video autoplay muted loop id="hero-video">
+                <source src="14605704_1080_1920_60fps.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
         </div>
+        <div class="hero-text">
+            <h1>Reliable Roofs and Gutters</h1>
+            <p>Quality Roofing Solutions for Every Home</p>
+            <a href="contact.html" class="cta-btn">Get a Quote</a>
 
+        </div>
     </section>
 
-
-    <!-- SERVICES REBRAND -->
-    <section id="services" class="section services">
-        <h2 class="section-title">Our Services</h2>
-        <p class="section-subtitle">Roofing • Gutters • Ceilings</p>
-
-        <div class="service-grid">
-
+    <!-- Services Section -->
+    <section class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
             <div class="service-card">
+                <img src="pexels-adrien-olichon-1257089-2663254.jpg" alt="Roofing">
                 <h3>Roofing</h3>
-                <p>Installation, repairs & full replacements.</p>
-                <div class="service-tags">
-                    <span>IBR</span><span>Corrugated</span><span>Slate</span><span>Aluminium</span>
-                    <span>Clay</span><span>Concrete</span><span>Chromadek</span><span>Fibreglass</span>
-                    <span>Waterproofing</span><span>Painting</span><span>Sealing</span>
-                </div>
+                <ul>
+                    <li>IBR, Corrugated Metal, Slate, Aluminium</li>
+                    <li>Polycarbonate, Clay, Concrete, Kliplok</li>
+                    <li>Asphalt Shingles, Fibreglass, Chromadek, Fibre Cement</li>
+                    <li>Waterproofing, Repairs, Painting, Sealing</li>
+                </ul>
             </div>
-
             <div class="service-card">
+                <img src="pexels-hermaion-233267.jpg" alt="Gutters">
                 <h3>Gutters</h3>
-                <p>Custom seamless gutters & full systems.</p>
-                <div class="service-tags">
-                    <span>K-style</span><span>Box</span><span>Roundline</span><span>Squareline</span>
-                    <span>Aluminium</span><span>Copper</span><span>Steel</span><span>Zinc</span>
-                    <span>Installation</span><span>Repairs</span>
-                </div>
+                <ul>
+                    <li>K-style, Half-round, Box, Seamless</li>
+                    <li>Vinyl, Aluminium, Galvanised, Copper</li>
+                    <li>Steel, Zinc, Quad, Roundline, Squareline</li>
+                    <li>O-Gee, Deepflow, Facia, Sectional, Repairs</li>
+                </ul>
             </div>
-
             <div class="service-card">
+                <img src="pexels-ibnulharezmi-17082068.jpg" alt="Plumbing">
                 <h3>Ceilings</h3>
-                <p>All ceiling types installed or replaced.</p>
-                <div class="service-tags">
-                    <span>Flat</span><span>Tray</span><span>Coffered</span><span>Vaulted</span>
-                    <span>Suspended</span><span>Coved</span><span>Recessed</span>
-                </div>
+                <ul>
+                    <li>Conventional (Flat), Tray, Coffered</li>
+                    <li>Vaulted/Cathedral, Suspended/Drop</li>
+                    <li>Beam, Coved, Multi-level, Recessed Panels</li>
+                </ul>
             </div>
-
         </div>
     </section>
 
+   <!-- Areas We Serve -->
+<section class="areas">
+    <h2>Areas We Serve</h2>
+    <p class="areas-intro">Based in Hazyview & Nelspruit — proudly serving homes and businesses across the Lowveld region.</p>
 
-    <!-- AREA COVERAGE -->
-    <section id="areas" class="section areas">
-        <h2 class="section-title">Areas We Serve</h2>
-        <p class="section-subtitle">Across Hazyview, Nelspruit & the entire Lowveld</p>
+    <div class="areas-grid">
+        <div class="area-card">Acornhoek</div>
+        <div class="area-card">Barberton</div>
+        <div class="area-card">Burgersfort</div>
+        <div class="area-card">Bushbuckridge</div>
+        <div class="area-card">Dwarsloop</div>
+        <div class="area-card">Game</div>
+        <div class="area-card">Graskop</div>
+        <div class="area-card">Hazyview</div>
+        <div class="area-card">Hoedspruit</div>
+        <div class="area-card">Komatipoort</div>
+        <div class="area-card">Kruger National Park</div>
+        <div class="area-card">Lydenburg</div>
+        <div class="area-card">Malelane</div>
+        <div class="area-card">Mariti</div>
+        <div class="area-card">Marloth Park</div>
+        <div class="area-card">Mkhuhlu</div>
+        <div class="area-card">Nelspruit</div>
+        <div class="area-card">Numbi</div>
+        <div class="area-card">Numbipark</div>
+        <div class="area-card">Origstad</div>
+        <div class="area-card">Phalaborwa</div>
+        <div class="area-card">Sabie</div>
+        <div class="area-card">White River</div>
+    </div>
+</section>
 
-        <div class="area-grid">
 
-            <span class="area-item">Acornhoek</span>
-            <span class="area-item">Barberton</span>
-            <span class="area-item">Burgersfort</span>
-            <span class="area-item">Bushbuckridge</span>
-            <span class="area-item">Graskop</span>
-            <span class="area-item">Hazyview</span>
-            <span class="area-item">Hoedspruit</span>
-            <span class="area-item">Komatipoort</span>
-            <span class="area-item">Lydenburg</span>
-            <span class="area-item">Malelane</span>
-            <span class="area-item">Marloth Park</span>
-            <span class="area-item">Mkhuhlu</span>
-            <span class="area-item">Nelspruit</span>
-            <span class="area-item">Numbi</span>
-            <span class="area-item">Phalaborwa</span>
-            <span class="area-item">Sabie</span>
-            <span class="area-item">White River</span>
-
+  
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Lowveld Roofs and Gutters. All rights reserved.</p>
+        <div class="socials">
+            <a href="https://wa.me/27821234567">WhatsApp</a>
+            <a href="tel:+27821234567">Call Us</a>
+            <a href="mailto:info@lowveld.com">Email</a>
         </div>
-    </section>
-
-
-    <!-- CALL TO ACTION -->
-    <section class="cta-section">
-        <h2>Ready to Upgrade Your Roof or Gutters?</h2>
-        <p>We respond fast. Expect a reply within minutes.</p>
-        <button class="primary-btn" onclick="openWhatsApp()">WhatsApp Us Now</button>
-    </section>
-
-
-    <!-- FOOTER -->
-    <footer class="footer">
-        <p>© 2025 Lowveld Roofs & Gutters. All Rights Reserved.</p>
     </footer>
-<script src="main.js"></script>
+
+    <script src="main.js"></script>
 </body>
 </html>
