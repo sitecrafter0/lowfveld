@@ -8,11 +8,22 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
+     <header class="site-header">
+    <div class="container nav-container">
+
         <div class="logo">
             <img src="logo.jpg" alt="Lowveld Roofs and Gutters">
         </div>
-        <nav>
+
+        <!-- Hamburger icon -->
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+        <!-- Navigation -->
+        <nav class="nav" id="nav-menu">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -20,20 +31,24 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
-    </header>
 
- <!-- About Hero with Background Video -->
-<section class="about-hero">
-    <video class="about-video" autoplay muted loop playsinline>
+    </div>
+</header>
+
+<section class="hero">
+
+    <video class="hero-video" autoplay loop muted playsinline>
         <source src="5644254-hd_1920_1080_25fps.mp4" type="video/mp4">
     </video>
 
-    <div class="about-hero-overlay"></div>
+    <div class="hero-overlay"></div>
 
-    <div class="about-hero-text">
-        <h1>About Lowveld Roofs and Gutters</h1>
-        <p>Your trusted roofing and gutter experts in the Lowveld region.</p>
+    <div class="hero-text">
+        <h1>Reliable Roofs & Gutters</h1>
+        <p>Quality Roofing Solutions for Every Home</p>
+        <a href="contact.html" class="cta-btn">Get a Quote</a>
     </div>
+
 </section>
 
 

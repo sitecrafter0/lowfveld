@@ -8,28 +8,27 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="header">
-    <div class="header-container">
+  <header class="site-header">
+    <div class="container nav-container">
 
-        <!-- Logo -->
         <div class="logo">
             <img src="logo.jpg" alt="Lowveld Roofs and Gutters">
         </div>
 
-        <!-- Hamburger (Mobile Only) -->
+        <!-- Hamburger icon -->
         <div class="hamburger" id="hamburger">
             <span></span>
             <span></span>
             <span></span>
         </div>
 
-        <!-- Navigation Menu -->
-        <nav class="nav-menu" id="nav-menu">
+        <!-- Navigation -->
+        <nav class="nav" id="nav-menu">
             <ul>
-                <li><a href="index.html" onclick="closeMenu()">Home</a></li>
-                <li><a href="about.html" onclick="closeMenu()">About</a></li>
-                <li><a href="portfolio.html" onclick="closeMenu()">Portfolio</a></li>
-                <li><a href="contact.html" onclick="closeMenu()">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
 
@@ -37,21 +36,24 @@
 </header>
 
 
+
     <!-- Hero Section -->
     <section class="hero">
-        <div class="hero-video-container">
-            <video autoplay muted loop id="hero-video">
-                <source src="14605704_1080_1920_60fps.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-        <div class="hero-text">
-            <h1>Reliable Roofs and Gutters</h1>
-            <p>Quality Roofing Solutions for Every Home</p>
-            <a href="contact.html" class="cta-btn">Get a Quote</a>
 
-        </div>
-    </section>
+    <video class="hero-video" autoplay loop muted playsinline>
+        <source src="5644254-hd_1920_1080_25fps.mp4" type="video/mp4">
+    </video>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-text">
+        <h1>Reliable Roofs & Gutters</h1>
+        <p>Quality Roofing Solutions for Every Home</p>
+        <a href="contact.html" class="cta-btn">Get a Quote</a>
+    </div>
+
+</section>
+
 
     <!-- Services Section -->
     <section class="services">
