@@ -1,21 +1,37 @@
-// Smooth scroll behavior for internal links
+// ------------------------------
+// Smooth Scroll for Internal Links
+// ------------------------------
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
+        // Only smooth scroll if the link points to an ID on the same page
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            e.preventDefault();
+            target.scrollIntoView({
+                behavior: 'smooth'
+            });
+        }
     });
 });
-<script>
-const toggle = document.getElementById("menuToggle");
-const nav = document.getElementById("navMenu");
 
-toggle.onclick = () => {
-    nav.classList.toggle("open");
-};
+// ------------------------------
+// Mobile Navigation Toggle
+// ------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("navToggle");
+    const nav = document.getElementById("navMenu");
 
-function closeMenu() {
-    nav.classList.remove("open");
-}
-</script>
+    if (toggle && nav) {
+        // Open/close menu when hamburger is clicked
+        toggle.addEventListener("click", () => {
+            nav.classList.toggle("open");
+        });
+
+        // Close menu when clicking any nav link
+        document.querySelectorAll(".nav-menu a").forEach(link => {
+            link.addEventListener("click", () => {
+                nav.classList.remove("open");
+            });
+        });
+    }
+});
