@@ -7,3 +7,15 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
+<script>
+const toggle = document.getElementById("menuToggle");
+const nav = document.getElementById("navMenu");
+
+toggle.onclick = () => {
+    nav.classList.toggle("open");
+};
+
+function closeMenu() {
+    nav.classList.remove("open");
+}
+</script>
